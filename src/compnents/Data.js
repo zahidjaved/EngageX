@@ -23,6 +23,8 @@ export const carddata = [
     {"id": 2, title: "Send Payment Structure to Martin", tim: "12:00 PM", dat: "17 `Jan" },
     {"id": 3, title: "Find 3Bhk Apartment in JVC for Michael", tim: "3:30 PM", dat: "26 `Jan" },
     {"id": 4, title: "Collect documents from Smith", tim: "4:00 PM", dat: "28 `Jan" },
+    {"id": 2, title: "Send Payment Structure to Martin", tim: "12:00 PM", dat: "17 `Jan" },
+    {"id": 3, title: "Find 3Bhk Apartment in JVC for Michael", tim: "3:30 PM", dat: "26 `Jan" },
    
     
   ];

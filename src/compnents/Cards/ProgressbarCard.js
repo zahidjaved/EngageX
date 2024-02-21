@@ -10,7 +10,7 @@ const ProgressbarCard = () => {
             Total Conversion Rate
           </h2>
 
-          <ul class="max-w-md list-disc dark:text-gray-400 w-[45%] flex justify-between ">
+          <ul className="max-w-md list-disc dark:text-gray-400 w-[45%] flex justify-between ">
             <li className="marker:text-teal-600 font-medium text-[10px]">
               Completed
             </li>

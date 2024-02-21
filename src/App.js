@@ -9,6 +9,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import CreateAccount from './compnents/Accounts/CreateAccount';
 import Lead from './compnents/Dashboard/Lead';
+import Broadcast from './compnents/Dashboard/Broadcast';
+import PageNotFound from './compnents/Dashboard/PageNotFound';
 
 
 function App() {
@@ -23,6 +25,11 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="lead" element={<Lead />} />
+          <Route path="broadcast" element={<Broadcast />} />
+          <Route
+                    path="*"
+                    element={<PageNotFound />}
+                />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
