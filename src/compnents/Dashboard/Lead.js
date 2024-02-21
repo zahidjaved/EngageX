@@ -30,7 +30,6 @@ const Lead = () => {
         </nav>
         {/* lead cards section */}
         <div className="mt-[26px] flex flex-wrap justify-between lg:pr-[2px] 2xl:pr-[60px] ">
-          <h3>this change</h3>
           <LeadPageCards />
         </div>
       </main>
