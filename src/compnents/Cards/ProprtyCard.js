@@ -2,29 +2,29 @@ import React from "react";
 
 const ProprtyCard = () => {
   return (
-    <div className="flex justify-between pb-[30px]">
+    <div className="flex justify-between xl:pb-[30px] lg:pb-[2px]">
       <div className="w-[40%]">
-        <h2 className="text-[14px] font-medium mb-[35px]">Property Title</h2>
-        <h2 className="text-[14px] font-medium mb-[35px]">
+        <h2 className="xl:text-[14px] lg:text-[11px] font-medium mb-[35px]">Property Title</h2>
+        <h2 className="xl:text-[14px] lg:text-[8px] font-medium mb-[35px]">
           Beachfront Villas - Damac
         </h2>
-        <h3 className="text-[14px] font-medium mb-[35px]">
+        <h3 className="xl:text-[14px] lg:text-[8px]  font-medium mb-[35px]">
           Elite Towers - Abu Dhabi
         </h3>
-        <h3 className="text-[14px] font-medium mb-[35px]">
+        <h3 className="xl:text-[14px] lg:text-[8px]  font-medium mb-[35px]">
           Dubai Marina - Damac
         </h3>
       </div>
 
       <div className="w-[24%]">
-        <h2 className="text-[14px] font-medium mb-[35px]">Lead Interaction</h2>
+        <h2 className="xl:text-[14px] lg:text-[11px] font-medium mb-[35px]">Lead Interaction</h2>
         <h2 className="text-[14px] font-medium mb-[35px]">422</h2>
         <h3 className="text-[14px] font-medium mb-[35px]">334</h3>
         <h3 className="text-[14px] font-medium mb-[35px]">233</h3>
       </div>
 
       <div className="w-[24%]">
-        <h2 className="text-[14px] font-medium mb-[16px]">Viewing Rate</h2>
+        <h2 className="xl:text-[14px] lg:text-[11px] font-medium mb-[16px]">Viewing Rate</h2>
         <h2 className="text-[14px] font-medium mb-[16px]">
           <div className="flex justify-between mb-1">
             <span className="text-[14px] font-medium dark:text-white text-right w-full">

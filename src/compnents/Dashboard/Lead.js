@@ -1,23 +1,25 @@
-import React, { useEffect , useState } from "react";
+import React, { useEffect, useState } from "react";
 import AsideBar from "./AsideBar";
 import Topbar from "./Topbar";
 import LeadPageCards from "../Cards/LeadPageCards";
 
 const Lead = () => {
-// FORM
-const [formData, setFormData] = useState({levell: "",namee: "",depart: "", budgett: ""});
+  // FORM
+  const [formData, setFormData] = useState({
+    levell: "",
+    namee: "",
+    depart: "",
+    budgett: "",
+  });
 
-const handleChange = (event) => {
-  const { name, value } = event.target;
-  setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-};
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  
-};
-
-
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
 
   useEffect(() => {
     document.title = "Lead";
@@ -26,7 +28,7 @@ const handleSubmit = (event) => {
     <>
       {/* Asidebar */}
       <AsideBar />
-      <main className="w-[84%] ml-auto pt-[39px] pr-[42px] ">
+      <main className="3xl:w-[84%] lg:w-[77%] ml-auto 3xl:pt-[39px] 2xl:pt-[36px] lg:pt-[34px] 3xl:pr-[42px] 2xl:pr-[38px] lg:pr-[18px] text-[#606465] ">
         {/* topbar */}
         <Topbar />
         {/* breadcrumb */}
@@ -46,11 +48,6 @@ const handleSubmit = (event) => {
         <div className="mt-[26px] flex flex-wrap justify-between lg:pr-[2px] 2xl:pr-[60px] ">
           <LeadPageCards />
         </div>
-
-    
-
-
-
       </main>
     </>
   );

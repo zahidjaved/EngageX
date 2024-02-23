@@ -5,7 +5,7 @@ import { CardLayoutNew } from "./CardLayout";
 const DatePickerCard = () => {
   return (
     <>
-      <CardLayoutNew>
+      <div className=" border-2 border-zinc-300 rounded-md pr-[1px] mb-[11px]">
         <div className="flex items-center justify-center py-3 px-1">
           <div className=" w-full shadow-lg">
             <div className="md:p-2 p-2 dark:bg-gray-800 bg-white rounded-t">
@@ -59,7 +59,7 @@ const DatePickerCard = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex items-center justify-between pt-12 overflow-x-auto">
+              <div className="flex items-center justify-between xl:pt-12 lg:pt-[20px] overflow-x-auto">
                 <table className="w-full">
                   <thead>
                     <tr>
@@ -355,7 +355,7 @@ const DatePickerCard = () => {
             </div>
           </div>
         </div>
-      </CardLayoutNew>
+        </div>
     </>
   );
 };

@@ -19,8 +19,6 @@ function Broadcast() {
     }));
   };
 
-  debugger
-  
   const handleSubmit = (event) => {
     event.preventDefault();
     const newCard = {

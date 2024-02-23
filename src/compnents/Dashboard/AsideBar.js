@@ -1,15 +1,23 @@
-import React from "react";
+
 import { Outlet, Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
+import { useState } from "react";
+
 
 const AsideBar = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+   
+  };
   return (
     <>
-      <aside className="h-full bg-[#009E9B] w-[14.1%] pt-[35px] pb-[190px] fixed left-0 text-white">
-        <div className="w-[201px] m-auto mb-[80px]">
+      <aside className="h-full bg-[#009E9B]  3xl:w-[14.1%] 2xl:w-[14.1%] lg:w-[22%] sm:w-[25%] w-[45%] z-10 w pt-[35px] pb-[190px] fixed left-0 text-white">
+        <div className="3xl:w-[201px] 2xl:w-[201px] lg:w-[185px] md:w-[160px] w-[150px] m-auto mb-[80px]">
           <img src={logo} />
         </div>
-        <nav className="pl-[35px]">
+        <nav className="3xl:pl-[35px] lg:pl-[28px] pl-[25px]">
           <ul>
             <li className="mb-[42px]">
               <Link className="text-white font-normal text-lg" to="/dashboard">
@@ -238,10 +246,10 @@ const AsideBar = () => {
           </ul>
           <ul className="pl-12">
             <div className="mb-[50px]">
-              <button className="text-[#0DC4C4] shadow-inner py-[6px] px-[7px] bg-gray-50 rounded-s-3xl mr-1">
+              <button onClick={toggleDarkMode} className="text-[#0DC4C4] shadow-inner py-[6px] px-[7px] bg-gray-50 rounded-s-3xl mr-1">
                 bright
               </button>
-              <button className="shadow-inner py-[6px] px-[7px] bg-[#0DC4C4] rounded-r-3xl">
+              <button onClick={toggleDarkMode} className="shadow-inner py-[6px] px-[7px] bg-[#0DC4C4] rounded-r-3xl">
                 night
               </button>
             </div>

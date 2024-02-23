@@ -31,7 +31,7 @@ const LeadPageCards = () => {
       {LeadPageCardsdata.map((data, id) => {
         return (
           <div
-            className="pt-[13px] pl-[12px] pb-[4px] border-2 border-zinc-300 rounded-md pr-[6px] mb-[12px] w-[95%] sm:w-[48%] md:w-[49%] lg:w-[32%] xl:w-[23.4%] 2xl:w-[19.2%]"
+            className="pt-[13px] pl-[12px] pb-[4px] border-2 border-zinc-300 rounded-md pr-[6px] mb-[12px] w-[95%] sm:w-[48%] md:w-[49%] lg:w-[33%] xl:w-[23.4%] 2xl:w-[19.2%]"
             key={id}
           >
             <p className="text-end text-[12px] font-medium leading-[0px]">
